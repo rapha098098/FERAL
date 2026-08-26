@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+.banner{
+    background-image:url("Banner.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    height: 180px;
+}
+
+.logo-container {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    animation: rotacionar 20s linear infinite;
+}
+
+.h1 {
+    font-family: fantasy;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.menu a, menu a:visited {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu a:hover {
+    color: rgb(0, 174, 255);
+}
+
+@keyframes rotacionar {from {transform: rotate(0deg)
+}
+to{
+    transform: rotate(360deg);
+}}
