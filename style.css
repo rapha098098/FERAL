@@ -1,6 +1,5 @@
 /* ================================
    CONFIGURAÇÕES GERAIS
-================================ */
 
 * {
     margin: 0;
@@ -22,7 +21,6 @@ a {
 
 /* ================================
    HERO
-================================ */
 
 .hero {
     min-height: 480px;
@@ -148,7 +146,6 @@ a {
 
 /* ================================
    ÁREA DE PRODUTOS
-================================ */
 
 main {
     padding: 80px 6%;
@@ -181,7 +178,6 @@ main {
 
 /* ================================
    FILTROS
-================================ */
 
 .filters {
     display: flex;
@@ -221,7 +217,6 @@ main {
 
 /* ================================
    PRODUTOS
-================================ */
 
 .products {
     display: grid;
@@ -234,7 +229,6 @@ main {
 
 /* ================================
    CARD
-================================ */
 
 .card {
     background: #151711;
@@ -257,7 +251,6 @@ main {
 
 /* ================================
    IMAGEM
-================================ */
 
 .image {
     height: 330px;
@@ -335,7 +328,6 @@ main {
 
 /* ================================
    INFORMAÇÕES DO CARD
-================================ */
 
 .card-info {
     padding: 22px;
@@ -441,7 +433,6 @@ main {
 
 /* ================================
    BANNER
-================================ */
 
 .info {
     margin: 20px 6% 90px;
@@ -493,7 +484,6 @@ main {
 
 /* ================================
    RESPONSIVIDADE
-================================ */
 
 @media (max-width: 1000px) {
 
@@ -571,3 +561,228 @@ main {
     }
 
 }
+
+#sobre {
+    background: #0B0C09;
+    color: #F1F0E8;
+    padding: 100px 8%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+
+
+.sobre-texto {
+    max-width: 560px;
+}
+
+.sobre-subtitulo {
+    display: inline-block;
+
+    color: #B7C46B;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.sobre-texto h2 {
+    margin: 0 0 25px;
+
+    color: #B7C46B;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+.sobre-texto p {
+    color: #94968B;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+.sobre-texto p:last-child {
+    color: #B7C46B;
+
+    font-weight: 600;
+
+    margin-top: 28px;
+}
+
+
+
+
+.sobre-imagem {
+    background: #20231B;
+
+    border: 1px solid #292B24;
+
+    padding: 12px;
+
+    border-radius: 4px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.sobre-imagem:hover {
+    background: #1B1E16;
+
+    border-color: #B7C46B;
+
+    transform: translateY(-5px);
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 420px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 2px;
+
+    filter: saturate(0.7) contrast(1.1);
+
+    transition: 0.4s ease;
+}
+
+.sobre-imagem:hover img {
+    filter: saturate(0.9) contrast(1.15);
+
+    transform: scale(1.02);
+}
+
+
+
+
+.sobre-imagem::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(183, 196, 107, 0.08),
+        transparent 45%
+    );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    #sobre {
+        padding: 70px 6%;
+    }
+
+    .sobre-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 42px;
+    }
+
+    .sobre-imagem img {
+        height: 350px;
+    }
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+.banner{
+    background-image:url("Banner.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    height: 180px;
+}
+
+.logo-container {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    animation: rotacionar 20s linear infinite;
+}
+
+.h1 {
+    font-family: fantasy;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.menu a, menu a:visited {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu a:hover {
+    color: rgb(0, 174, 255);
+}
+
+@keyframes rotacionar {from {transform: rotate(0deg)
+}
+to{
+    transform: rotate(360deg);
+}}
