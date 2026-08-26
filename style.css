@@ -2,10 +2,12 @@ body{
     background-color: #0B0C09;
     color: #F1F0E8;
 }
+
 footer{
     padding: 5px;
     padding-left: 30px;
 }
+
 .footertexto{
     display: flex;
     text-align: center;
@@ -13,8 +15,10 @@ footer{
     flex-direction: column;
     padding-bottom: 3px;
 }
+
 /* ================================
    CONFIGURAÇÕES GERAIS
+================================ */
 
 * {
     margin: 0;
@@ -36,6 +40,7 @@ a {
 
 /* ================================
    HERO
+================================ */
 
 .hero {
     min-height: 480px;
@@ -161,6 +166,7 @@ a {
 
 /* ================================
    ÁREA DE PRODUTOS
+================================ */
 
 main {
     padding: 80px 6%;
@@ -193,6 +199,7 @@ main {
 
 /* ================================
    FILTROS
+================================ */
 
 .filters {
     display: flex;
@@ -232,6 +239,7 @@ main {
 
 /* ================================
    PRODUTOS
+================================ */
 
 .products {
     display: grid;
@@ -244,6 +252,7 @@ main {
 
 /* ================================
    CARD
+================================ */
 
 .card {
     background: #151711;
@@ -266,6 +275,7 @@ main {
 
 /* ================================
    IMAGEM
+================================ */
 
 .image {
     height: 330px;
@@ -343,6 +353,7 @@ main {
 
 /* ================================
    INFORMAÇÕES DO CARD
+================================ */
 
 .card-info {
     padding: 22px;
@@ -448,6 +459,7 @@ main {
 
 /* ================================
    BANNER
+================================ */
 
 .info {
     margin: 20px 6% 90px;
@@ -497,8 +509,10 @@ main {
     line-height: 1.5;
 }
 
+
 /* ================================
    RESPONSIVIDADE
+================================ */
 
 @media (max-width: 1000px) {
 
@@ -577,6 +591,7 @@ main {
 
 }
 
+
 #sobre {
     background: #0B0C09;
     color: #F1F0E8;
@@ -597,8 +612,6 @@ main {
 
     align-items: center;
 }
-
-
 
 
 .sobre-texto {
@@ -644,8 +657,6 @@ main {
 
     margin-top: 28px;
 }
-
-
 
 
 .sobre-imagem {
@@ -694,8 +705,6 @@ main {
 }
 
 
-
-
 .sobre-imagem::before {
     content: "";
 
@@ -719,8 +728,6 @@ main {
 }
 
 
-
-
 @media (max-width: 800px) {
 
     #sobre {
@@ -741,11 +748,12 @@ main {
         height: 350px;
     }
 }
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
 }
 
 
@@ -774,7 +782,7 @@ main {
     animation: rotacionar 20s linear infinite;
 }
 
-.h1 {
+.banner h1 {
     font-family: fantasy;
 }
 
@@ -786,7 +794,8 @@ main {
     font-size: 20px;
 }
 
-.menu a, menu a:visited {
+.menu a,
+.menu a:visited {
     color: white;
     text-decoration: none;
     transition: 1s;
@@ -796,8 +805,12 @@ main {
     color: rgb(0, 174, 255);
 }
 
-@keyframes rotacionar {from {transform: rotate(0deg)
+@keyframes rotacionar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
-to{
-    transform: rotate(360deg);
-}}
